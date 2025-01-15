@@ -1,3 +1,5 @@
+import Carousel from "./Carousel";
+
 export default function Header() {
   return (
     <header className="header py-7 vh-100">
@@ -21,6 +23,11 @@ export default function Header() {
             >
               Discover
             </a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <Carousel />
           </div>
         </div>
       </div>

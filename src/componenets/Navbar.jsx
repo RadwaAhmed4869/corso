@@ -7,8 +7,8 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <div class="container">
+    <nav className="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div className="container">
         <a href="index.html" className="navbar-brand">
           <img src={logoImg} alt="Corso logo" width="150" />
         </a>

@@ -3,39 +3,37 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Register() {
   return (
-    <section className="bg-primary">
+    <section className="register bg-primary py-6 overflow-hidden">
       <div className="container">
-        <div className="row py-6">
+        <div className="row">
           <div className="col-lg-6">
-            <div className="text-container">
-              <h2>Unlock Your Potential with Engaging Content</h2>
-              <p>
-                Our wide range of training and seminar videos are designed to
-                empower you with valuable knowledge and skills.
-              </p>
-              <ul className="list-unstyled">
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSquare} />
-                  <strong> Gain Expertise:</strong> Our videos provide in-depth
-                  insights and practical tips to enhance your expertise in
-                  various domains.
-                </li>
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSquare} />
-                  <strong> Stay Updated:</strong> Stay up-to-date with the
-                  latest industry trends and advancements through our
-                  informative and up-to-date videos.
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faSquare} />
-                  <strong> Expand Your Network:</strong> Connect with
-                  like-minded individuals and industry experts, fostering new
-                  connections and opportunities.
-                </li>
-              </ul>
-            </div>
+            <h2>Unlock Your Potential with Engaging Content</h2>
+            <p>
+              Our wide range of training and seminar videos are designed to
+              empower you with valuable knowledge and skills.
+            </p>
+            <ul className="list-unstyled vstack gap-3">
+              <li>
+                <FontAwesomeIcon icon={faSquare} />
+                <strong> Gain Expertise:</strong> Our videos provide in-depth
+                insights and practical tips to enhance your expertise in various
+                domains.
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faSquare} />
+                <strong> Stay Updated:</strong> Stay up-to-date with the latest
+                industry trends and advancements through our informative and
+                up-to-date videos.
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faSquare} />
+                <strong> Expand Your Network:</strong> Connect with like-minded
+                individuals and industry experts, fostering new connections and
+                opportunities.
+              </li>
+            </ul>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 p-4">
             <form>
               <div className="my-4">
                 <input
@@ -55,7 +53,7 @@ export default function Register() {
               </div>
               <div className="my-4">
                 <input
-                  type="number"
+                  type="text"
                   name="phone-number"
                   className="form-control form-control-lg rounded-0 border-0"
                   placeholder="Enter phone number"
@@ -66,9 +64,9 @@ export default function Register() {
                   class="form-check-input"
                   type="checkbox"
                   value=""
-                  id="flexCheckDefault"
+                  id="terms"
                 />
-                <label class="form-check-label" for="flexCheckDefault">
+                <label class="form-check-label" for="terms">
                   I agree to the terms and conditions
                 </label>
               </div>

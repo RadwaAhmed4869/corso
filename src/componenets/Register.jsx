@@ -60,13 +60,8 @@ export default function Register() {
                 />
               </div>
               <div className="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="terms"
-                />
-                <label className="form-check-label" for="terms">
+                <input className="form-check-input" type="checkbox" value="" />
+                <label className="form-check-label">
                   I agree to the terms and conditions
                 </label>
               </div>

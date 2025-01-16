@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import logoImg from "../images/logo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,8 +7,30 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
 
 export default function Navbar() {
+  const [darkNav, setDarkNav] = useState(false);
+
+  function changeNavBarColor() {
+    if (window.scrollY > 50) {
+      setDarkNav(true);
+    } else {
+      setDarkNav(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavBarColor);
+    return () => {
+      window.removeEventListener("scroll", changeNavBarColor);
+    };
+  }, []);
+
+  let navStyles = "navbar navbar-expand-lg fixed-top navbar-dark";
+  if (darkNav) {
+    navStyles += " bg-dark";
+  }
+
   return (
-    <nav className="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav className={navStyles}>
       <div className="container">
         <a href="index.html" className="navbar-brand">
           <img src={logoImg} alt="Corso logo" width="150" />

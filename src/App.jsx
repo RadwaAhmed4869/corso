@@ -6,6 +6,8 @@ import Points from "./componenets/Points";
 import Summary from "./componenets/Summary";
 import Invitation from "./componenets/Invitation";
 import Takeaways from "./componenets/Takeaways";
+import Subscribe from "./componenets/Subscribe";
+import Footer from "./componenets/Footer";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Details index={1} />
       <Invitation />
       <Takeaways />
+      <Subscribe />
+      <Footer />
     </>
   );
 }

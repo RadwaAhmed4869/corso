@@ -46,9 +46,9 @@ export default function Takeaways() {
     <section id="takeaways" className="takeaways my-5 bg-light">
       <div className="container">
         <div className="row text-center mb-5">
-          <div class="col-md-8 offset-md-2">
+          <div className="col-md-8 offset-md-2">
             <h2>Key Takeaways</h2>
-            <p class="lead">
+            <p className="lead">
               Here are some of the takeaways and benefits you can expect from
               our programs.
             </p>
@@ -57,7 +57,7 @@ export default function Takeaways() {
         <div className="row">
           {KEYS.map((item) => {
             return (
-              <div className="col-md-4">
+              <div key={Math.random()} className="col-md-4">
                 <div className="card mb-4 rounded-0 border-0 p-3 bg-white">
                   <div className="card-body text-center">
                     <FontAwesomeIcon

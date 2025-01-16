@@ -10,8 +10,12 @@
 }
 
 .header .slide {
-  width: 90%;
+  width: 72%;
   margin: 0 auto;
+}
+
+.header .text-container p {
+  width: 100% !important;
 }
 
 .navbar {
@@ -34,9 +38,15 @@
   }
 
   .header {
-    height: 800px !important;
-    min-height: 800px !important;
+    height: 850px !important;
+    min-height: 850px !important;
   }
+
+  .header .slide {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
 
   .register h2 {
     text-align: center;

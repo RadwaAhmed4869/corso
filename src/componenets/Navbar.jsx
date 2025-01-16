@@ -24,7 +24,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#home">
                 Home
@@ -51,11 +51,16 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-          <span className="nav-item">
+          <span className="nav-item ms-lg-4 me-4">
             <span className="fa-layers fa-fw">
               <a href="#">
                 <FontAwesomeIcon icon={faCircle} size="2x" />
-                <FontAwesomeIcon icon={faFacebookF} color={"white"} size="1x" />
+                <FontAwesomeIcon
+                  icon={faFacebookF}
+                  color={"white"}
+                  size="1x"
+                  className="ps-2"
+                />
               </a>
             </span>
           </span>
@@ -63,7 +68,12 @@ export default function Navbar() {
             <span className="fa-layers fa-fw">
               <a href="#">
                 <FontAwesomeIcon icon={faCircle} size="2x" />
-                <FontAwesomeIcon icon={faTwitter} color={"white"} size="1x" />
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  color={"white"}
+                  size="1x"
+                  className="ps-2"
+                />
               </a>
             </span>
           </span>

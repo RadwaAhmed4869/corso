@@ -22,29 +22,41 @@ export default function Footer() {
           </div>
           <div className="col-md-4">
             <h3>Quick Links</h3>
-            <ul className="nav list-unstyled">
-              <li className="nav-item">
-                <a href="#" className="nav-link">
+            <ul className=" list-unstyled">
+              <li>
+                <a href="#" className="link-underline link-underline-opacity-0">
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#discover" className="nav-link">
+              <li>
+                <a
+                  href="#discover"
+                  className="link-underline link-underline-opacity-0"
+                >
                   Discover
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#summary" className="nav-link">
+              <li>
+                <a
+                  href="#summary"
+                  className="link-underline link-underline-opacity-0"
+                >
                   Summary
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#takeaways" className="nav-link">
+              <li>
+                <a
+                  href="#takeaways"
+                  className="link-underline link-underline-opacity-0"
+                >
                   Takeaways
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#subscribe" className="nav-link">
+              <li>
+                <a
+                  href="#subscribe"
+                  className="link-underline link-underline-opacity-0"
+                >
                   Subscribe
                 </a>
               </li>

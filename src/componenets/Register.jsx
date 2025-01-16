@@ -59,19 +59,19 @@ export default function Register() {
                   placeholder="Enter phone number"
                 />
               </div>
-              <div class="form-check">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="checkbox"
                   value=""
                   id="terms"
                 />
-                <label class="form-check-label" for="terms">
+                <label className="form-check-label" for="terms">
                   I agree to the terms and conditions
                 </label>
               </div>
               <div className="d-grid mt-4">
-                <button class="btn btn-outline-dark">Register</button>
+                <button className="btn btn-outline-dark">Register</button>
               </div>
             </form>
           </div>
